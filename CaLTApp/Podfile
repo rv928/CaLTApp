@@ -1,0 +1,25 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '14.1'
+inhibit_all_warnings!
+use_frameworks!
+
+ def app_pods
+  pod 'Alamofire', '~> 5.4'
+  pod 'SVProgressHUD'
+  pod 'Kingfisher'
+ end
+ target 'CaLTApp' do
+  app_pods
+  
+  # Pods for CaLTApp
+
+  target 'CaLTAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CaLTAppUITests' do
+    # Pods for testing
+  end
+
+end
