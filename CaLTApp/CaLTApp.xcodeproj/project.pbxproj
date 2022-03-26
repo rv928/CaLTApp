@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64F085151B7AF78823BEDF1F /* Pods_CaLTApp_CaLTAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE62A432B0FBDB36239EB5E /* Pods_CaLTApp_CaLTAppUITests.framework */; };
+		9146F3AA27EC218F004FE76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3A927EC218F004FE76F /* AppDelegate.swift */; };
+		9146F3AC27EC218F004FE76F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3AB27EC218F004FE76F /* SceneDelegate.swift */; };
+		9146F3B127EC218F004FE76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9146F3AF27EC218F004FE76F /* Main.storyboard */; };
+		9146F3B327EC2190004FE76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9146F3B227EC2190004FE76F /* Assets.xcassets */; };
+		9146F3B627EC2190004FE76F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9146F3B427EC2190004FE76F /* LaunchScreen.storyboard */; };
+		9146F3C127EC2190004FE76F /* CaLTAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3C027EC2190004FE76F /* CaLTAppTests.swift */; };
+		9146F3CC27EC2191004FE76F /* CaLTAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3CB27EC2191004FE76F /* CaLTAppUITests.swift */; };
+		9146F3DE27EC53B4004FE76F /* CatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3DD27EC53B4004FE76F /* CatListViewController.swift */; };
+		9146F3E027EC53C7004FE76F /* CatListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3DF27EC53C7004FE76F /* CatListInteractor.swift */; };
+		9146F3E227EC53DE004FE76F /* CatListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3E127EC53DE004FE76F /* CatListModels.swift */; };
+		9146F3E427EC53EC004FE76F /* CatListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3E327EC53EC004FE76F /* CatListWorker.swift */; };
+		9146F3E627EC53FB004FE76F /* CatListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3E527EC53FB004FE76F /* CatListService.swift */; };
+		9146F3E827EC5407004FE76F /* CatListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3E727EC5407004FE76F /* CatListPresenter.swift */; };
+		9146F3EA27EC5413004FE76F /* CatListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3E927EC5413004FE76F /* CatListRouter.swift */; };
+		9146F3EF27EC6469004FE76F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3EE27EC6469004FE76F /* APIManager.swift */; };
+		9146F3F427EC70AF004FE76F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146F3F327EC70AF004FE76F /* ErrorHandler.swift */; };
+		91799DC027EEBE6100987BB0 /* CatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DBE27EEBE6100987BB0 /* CatListCell.swift */; };
+		91799DC127EEBE6100987BB0 /* CatListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91799DBF27EEBE6100987BB0 /* CatListCell.xib */; };
+		91799DC427EEC0C000987BB0 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DC327EEC0C000987BB0 /* UIImageView+Cache.swift */; };
+		91799DC627EEC89E00987BB0 /* UIViewController+ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DC527EEC89E00987BB0 /* UIViewController+ProgressHUD.swift */; };
+		91799DC827EEC8D700987BB0 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DC727EEC8D700987BB0 /* UIViewController+Alert.swift */; };
+		91799DCA27EEF30300987BB0 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DC927EEF30300987BB0 /* UIImageView+DownloadImage.swift */; };
+		990BE810B4C8532C71A54C89 /* Pods_CaLTAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C15F1F6B4732B01C226EBA /* Pods_CaLTAppTests.framework */; };
+		ECAA66669832F52DC6450204 /* Pods_CaLTApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1F5E699FC52335F2A79931 /* Pods_CaLTApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9146F3BD27EC2190004FE76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9146F39E27EC218F004FE76F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9146F3A527EC218F004FE76F;
+			remoteInfo = CaLTApp;
+		};
+		9146F3C827EC2191004FE76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9146F39E27EC218F004FE76F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9146F3A527EC218F004FE76F;
+			remoteInfo = CaLTApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		146109D2F2B9FFD8A6570C6B /* Pods-CaLTApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTApp.debug.xcconfig"; path = "Target Support Files/Pods-CaLTApp/Pods-CaLTApp.debug.xcconfig"; sourceTree = "<group>"; };
+		43E9E26000B304E30C4BFF6E /* Pods-CaLTAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTAppTests.release.xcconfig"; path = "Target Support Files/Pods-CaLTAppTests/Pods-CaLTAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E11DBF49531645058299E38 /* Pods-CaLTApp-CaLTAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTApp-CaLTAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CaLTApp-CaLTAppUITests/Pods-CaLTApp-CaLTAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9146F3A627EC218F004FE76F /* CaLTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaLTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9146F3A927EC218F004FE76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9146F3AB27EC218F004FE76F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9146F3B027EC218F004FE76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9146F3B227EC2190004FE76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9146F3B527EC2190004FE76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9146F3B727EC2190004FE76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9146F3BC27EC2190004FE76F /* CaLTAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaLTAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9146F3C027EC2190004FE76F /* CaLTAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaLTAppTests.swift; sourceTree = "<group>"; };
+		9146F3C227EC2190004FE76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9146F3C727EC2191004FE76F /* CaLTAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaLTAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9146F3CB27EC2191004FE76F /* CaLTAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaLTAppUITests.swift; sourceTree = "<group>"; };
+		9146F3CD27EC2191004FE76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9146F3DD27EC53B4004FE76F /* CatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListViewController.swift; sourceTree = "<group>"; };
+		9146F3DF27EC53C7004FE76F /* CatListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListInteractor.swift; sourceTree = "<group>"; };
+		9146F3E127EC53DE004FE76F /* CatListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListModels.swift; sourceTree = "<group>"; };
+		9146F3E327EC53EC004FE76F /* CatListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListWorker.swift; sourceTree = "<group>"; };
+		9146F3E527EC53FB004FE76F /* CatListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListService.swift; sourceTree = "<group>"; };
+		9146F3E727EC5407004FE76F /* CatListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListPresenter.swift; sourceTree = "<group>"; };
+		9146F3E927EC5413004FE76F /* CatListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListRouter.swift; sourceTree = "<group>"; };
+		9146F3EE27EC6469004FE76F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9146F3F327EC70AF004FE76F /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		91799DBE27EEBE6100987BB0 /* CatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListCell.swift; sourceTree = "<group>"; };
+		91799DBF27EEBE6100987BB0 /* CatListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatListCell.xib; sourceTree = "<group>"; };
+		91799DC327EEC0C000987BB0 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		91799DC527EEC89E00987BB0 /* UIViewController+ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ProgressHUD.swift"; sourceTree = "<group>"; };
+		91799DC727EEC8D700987BB0 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		91799DC927EEF30300987BB0 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		976724A825AFBB8DD2483C3C /* Pods-CaLTApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTApp.release.xcconfig"; path = "Target Support Files/Pods-CaLTApp/Pods-CaLTApp.release.xcconfig"; sourceTree = "<group>"; };
+		9B1F5E699FC52335F2A79931 /* Pods_CaLTApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaLTApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB52B5B68F81BABC5BBC17D /* Pods-CaLTAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CaLTAppTests/Pods-CaLTAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3C15F1F6B4732B01C226EBA /* Pods_CaLTAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaLTAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FB09C6F0262B49368F2C5E /* Pods-CaLTApp-CaLTAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTApp-CaLTAppUITests.release.xcconfig"; path = "Target Support Files/Pods-CaLTApp-CaLTAppUITests/Pods-CaLTApp-CaLTAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DAE62A432B0FBDB36239EB5E /* Pods_CaLTApp_CaLTAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaLTApp_CaLTAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9146F3A327EC218F004FE76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECAA66669832F52DC6450204 /* Pods_CaLTApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9146F3B927EC2190004FE76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990BE810B4C8532C71A54C89 /* Pods_CaLTAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9146F3C427EC2191004FE76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F085151B7AF78823BEDF1F /* Pods_CaLTApp_CaLTAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2477A1E7A0D706D814D3CE42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				146109D2F2B9FFD8A6570C6B /* Pods-CaLTApp.debug.xcconfig */,
+				976724A825AFBB8DD2483C3C /* Pods-CaLTApp.release.xcconfig */,
+				7E11DBF49531645058299E38 /* Pods-CaLTApp-CaLTAppUITests.debug.xcconfig */,
+				D8FB09C6F0262B49368F2C5E /* Pods-CaLTApp-CaLTAppUITests.release.xcconfig */,
+				ACB52B5B68F81BABC5BBC17D /* Pods-CaLTAppTests.debug.xcconfig */,
+				43E9E26000B304E30C4BFF6E /* Pods-CaLTAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9146F39D27EC218F004FE76F = {
+			isa = PBXGroup;
+			children = (
+				9146F3A827EC218F004FE76F /* CaLTApp */,
+				9146F3BF27EC2190004FE76F /* CaLTAppTests */,
+				9146F3CA27EC2191004FE76F /* CaLTAppUITests */,
+				9146F3A727EC218F004FE76F /* Products */,
+				2477A1E7A0D706D814D3CE42 /* Pods */,
+				ABE9E15288B6961B7FF09EB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9146F3A727EC218F004FE76F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3A627EC218F004FE76F /* CaLTApp.app */,
+				9146F3BC27EC2190004FE76F /* CaLTAppTests.xctest */,
+				9146F3C727EC2191004FE76F /* CaLTAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9146F3A827EC218F004FE76F /* CaLTApp */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3A927EC218F004FE76F /* AppDelegate.swift */,
+				9146F3AB27EC218F004FE76F /* SceneDelegate.swift */,
+				9146F3AF27EC218F004FE76F /* Main.storyboard */,
+				9146F3D927EC4464004FE76F /* Modules */,
+				9146F3DA27EC4464004FE76F /* SupportingClass */,
+				9146F3B227EC2190004FE76F /* Assets.xcassets */,
+				9146F3B427EC2190004FE76F /* LaunchScreen.storyboard */,
+				9146F3B727EC2190004FE76F /* Info.plist */,
+			);
+			path = CaLTApp;
+			sourceTree = "<group>";
+		};
+		9146F3BF27EC2190004FE76F /* CaLTAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3C027EC2190004FE76F /* CaLTAppTests.swift */,
+				9146F3C227EC2190004FE76F /* Info.plist */,
+			);
+			path = CaLTAppTests;
+			sourceTree = "<group>";
+		};
+		9146F3CA27EC2191004FE76F /* CaLTAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3CB27EC2191004FE76F /* CaLTAppUITests.swift */,
+				9146F3CD27EC2191004FE76F /* Info.plist */,
+			);
+			path = CaLTAppUITests;
+			sourceTree = "<group>";
+		};
+		9146F3D927EC4464004FE76F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3DC27EC4486004FE76F /* CatList */,
+				9146F3DB27EC4486004FE76F /* CatDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9146F3DA27EC4464004FE76F /* SupportingClass */ = {
+			isa = PBXGroup;
+			children = (
+				91799DC227EEC0A600987BB0 /* Extensions */,
+				9146F3F227EC703D004FE76F /* ErrorHandler */,
+				9146F3ED27EC6469004FE76F /* APIManager */,
+			);
+			path = SupportingClass;
+			sourceTree = "<group>";
+		};
+		9146F3DB27EC4486004FE76F /* CatDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CatDetail;
+			sourceTree = "<group>";
+		};
+		9146F3DC27EC4486004FE76F /* CatList */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3E127EC53DE004FE76F /* CatListModels.swift */,
+				9146F3DD27EC53B4004FE76F /* CatListViewController.swift */,
+				9146F3DF27EC53C7004FE76F /* CatListInteractor.swift */,
+				9146F3E327EC53EC004FE76F /* CatListWorker.swift */,
+				9146F3E527EC53FB004FE76F /* CatListService.swift */,
+				9146F3E727EC5407004FE76F /* CatListPresenter.swift */,
+				9146F3E927EC5413004FE76F /* CatListRouter.swift */,
+				91799DBD27EEBE4600987BB0 /* CatListCell */,
+			);
+			path = CatList;
+			sourceTree = "<group>";
+		};
+		9146F3ED27EC6469004FE76F /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3EE27EC6469004FE76F /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		9146F3F227EC703D004FE76F /* ErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				9146F3F327EC70AF004FE76F /* ErrorHandler.swift */,
+			);
+			path = ErrorHandler;
+			sourceTree = "<group>";
+		};
+		91799DBD27EEBE4600987BB0 /* CatListCell */ = {
+			isa = PBXGroup;
+			children = (
+				91799DBE27EEBE6100987BB0 /* CatListCell.swift */,
+				91799DBF27EEBE6100987BB0 /* CatListCell.xib */,
+			);
+			path = CatListCell;
+			sourceTree = "<group>";
+		};
+		91799DC227EEC0A600987BB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				91799DC327EEC0C000987BB0 /* UIImageView+Cache.swift */,
+				91799DC527EEC89E00987BB0 /* UIViewController+ProgressHUD.swift */,
+				91799DC727EEC8D700987BB0 /* UIViewController+Alert.swift */,
+				91799DC927EEF30300987BB0 /* UIImageView+DownloadImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABE9E15288B6961B7FF09EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B1F5E699FC52335F2A79931 /* Pods_CaLTApp.framework */,
+				DAE62A432B0FBDB36239EB5E /* Pods_CaLTApp_CaLTAppUITests.framework */,
+				B3C15F1F6B4732B01C226EBA /* Pods_CaLTAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9146F3A527EC218F004FE76F /* CaLTApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9146F3D027EC2191004FE76F /* Build configuration list for PBXNativeTarget "CaLTApp" */;
+			buildPhases = (
+				642A57CD53ECD53F980F444D /* [CP] Check Pods Manifest.lock */,
+				9146F3A227EC218F004FE76F /* Sources */,
+				9146F3A327EC218F004FE76F /* Frameworks */,
+				9146F3A427EC218F004FE76F /* Resources */,
+				FC8E52ED53E456722F514E68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaLTApp;
+			productName = CaLTApp;
+			productReference = 9146F3A627EC218F004FE76F /* CaLTApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9146F3BB27EC2190004FE76F /* CaLTAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9146F3D327EC2191004FE76F /* Build configuration list for PBXNativeTarget "CaLTAppTests" */;
+			buildPhases = (
+				58530DA7F873C3A7B86CEE26 /* [CP] Check Pods Manifest.lock */,
+				9146F3B827EC2190004FE76F /* Sources */,
+				9146F3B927EC2190004FE76F /* Frameworks */,
+				9146F3BA27EC2190004FE76F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9146F3BE27EC2190004FE76F /* PBXTargetDependency */,
+			);
+			name = CaLTAppTests;
+			productName = CaLTAppTests;
+			productReference = 9146F3BC27EC2190004FE76F /* CaLTAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9146F3C627EC2191004FE76F /* CaLTAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9146F3D627EC2191004FE76F /* Build configuration list for PBXNativeTarget "CaLTAppUITests" */;
+			buildPhases = (
+				3512D294F746CA0246DB31EE /* [CP] Check Pods Manifest.lock */,
+				9146F3C327EC2191004FE76F /* Sources */,
+				9146F3C427EC2191004FE76F /* Frameworks */,
+				9146F3C527EC2191004FE76F /* Resources */,
+				81485F88A21B03D444857522 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9146F3C927EC2191004FE76F /* PBXTargetDependency */,
+			);
+			name = CaLTAppUITests;
+			productName = CaLTAppUITests;
+			productReference = 9146F3C727EC2191004FE76F /* CaLTAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9146F39E27EC218F004FE76F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9146F3A527EC218F004FE76F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9146F3BB27EC2190004FE76F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9146F3A527EC218F004FE76F;
+					};
+					9146F3C627EC2191004FE76F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9146F3A527EC218F004FE76F;
+					};
+				};
+			};
+			buildConfigurationList = 9146F3A127EC218F004FE76F /* Build configuration list for PBXProject "CaLTApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9146F39D27EC218F004FE76F;
+			productRefGroup = 9146F3A727EC218F004FE76F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9146F3A527EC218F004FE76F /* CaLTApp */,
+				9146F3BB27EC2190004FE76F /* CaLTAppTests */,
+				9146F3C627EC2191004FE76F /* CaLTAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9146F3A427EC218F004FE76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91799DC127EEBE6100987BB0 /* CatListCell.xib in Resources */,
+				9146F3B627EC2190004FE76F /* LaunchScreen.storyboard in Resources */,
+				9146F3B327EC2190004FE76F /* Assets.xcassets in Resources */,
+				9146F3B127EC218F004FE76F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9146F3BA27EC2190004FE76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9146F3C527EC2191004FE76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3512D294F746CA0246DB31EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaLTApp-CaLTAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58530DA7F873C3A7B86CEE26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaLTAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		642A57CD53ECD53F980F444D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaLTApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81485F88A21B03D444857522 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaLTApp-CaLTAppUITests/Pods-CaLTApp-CaLTAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaLTApp-CaLTAppUITests/Pods-CaLTApp-CaLTAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CaLTApp-CaLTAppUITests/Pods-CaLTApp-CaLTAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8E52ED53E456722F514E68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaLTApp/Pods-CaLTApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CaLTApp/Pods-CaLTApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CaLTApp/Pods-CaLTApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9146F3A227EC218F004FE76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91799DC827EEC8D700987BB0 /* UIViewController+Alert.swift in Sources */,
+				9146F3E427EC53EC004FE76F /* CatListWorker.swift in Sources */,
+				9146F3E227EC53DE004FE76F /* CatListModels.swift in Sources */,
+				9146F3EF27EC6469004FE76F /* APIManager.swift in Sources */,
+				9146F3DE27EC53B4004FE76F /* CatListViewController.swift in Sources */,
+				9146F3F427EC70AF004FE76F /* ErrorHandler.swift in Sources */,
+				9146F3EA27EC5413004FE76F /* CatListRouter.swift in Sources */,
+				9146F3E627EC53FB004FE76F /* CatListService.swift in Sources */,
+				9146F3E027EC53C7004FE76F /* CatListInteractor.swift in Sources */,
+				91799DC027EEBE6100987BB0 /* CatListCell.swift in Sources */,
+				91799DC627EEC89E00987BB0 /* UIViewController+ProgressHUD.swift in Sources */,
+				91799DC427EEC0C000987BB0 /* UIImageView+Cache.swift in Sources */,
+				91799DCA27EEF30300987BB0 /* UIImageView+DownloadImage.swift in Sources */,
+				9146F3E827EC5407004FE76F /* CatListPresenter.swift in Sources */,
+				9146F3AA27EC218F004FE76F /* AppDelegate.swift in Sources */,
+				9146F3AC27EC218F004FE76F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9146F3B827EC2190004FE76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9146F3C127EC2190004FE76F /* CaLTAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9146F3C327EC2191004FE76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9146F3CC27EC2191004FE76F /* CaLTAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9146F3BE27EC2190004FE76F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9146F3A527EC218F004FE76F /* CaLTApp */;
+			targetProxy = 9146F3BD27EC2190004FE76F /* PBXContainerItemProxy */;
+		};
+		9146F3C927EC2191004FE76F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9146F3A527EC218F004FE76F /* CaLTApp */;
+			targetProxy = 9146F3C827EC2191004FE76F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9146F3AF27EC218F004FE76F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9146F3B027EC218F004FE76F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9146F3B427EC2190004FE76F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9146F3B527EC2190004FE76F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9146F3CE27EC2191004FE76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9146F3CF27EC2191004FE76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9146F3D127EC2191004FE76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 146109D2F2B9FFD8A6570C6B /* Pods-CaLTApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaLTApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calt.CaLTApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9146F3D227EC2191004FE76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976724A825AFBB8DD2483C3C /* Pods-CaLTApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaLTApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calt.CaLTApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9146F3D427EC2191004FE76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB52B5B68F81BABC5BBC17D /* Pods-CaLTAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaLTAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calt.CaLTAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaLTApp.app/CaLTApp";
+			};
+			name = Debug;
+		};
+		9146F3D527EC2191004FE76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E9E26000B304E30C4BFF6E /* Pods-CaLTAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaLTAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calt.CaLTAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaLTApp.app/CaLTApp";
+			};
+			name = Release;
+		};
+		9146F3D727EC2191004FE76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E11DBF49531645058299E38 /* Pods-CaLTApp-CaLTAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaLTAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calt.CaLTAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaLTApp;
+			};
+			name = Debug;
+		};
+		9146F3D827EC2191004FE76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8FB09C6F0262B49368F2C5E /* Pods-CaLTApp-CaLTAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaLTAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calt.CaLTAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaLTApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9146F3A127EC218F004FE76F /* Build configuration list for PBXProject "CaLTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9146F3CE27EC2191004FE76F /* Debug */,
+				9146F3CF27EC2191004FE76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9146F3D027EC2191004FE76F /* Build configuration list for PBXNativeTarget "CaLTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9146F3D127EC2191004FE76F /* Debug */,
+				9146F3D227EC2191004FE76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9146F3D327EC2191004FE76F /* Build configuration list for PBXNativeTarget "CaLTAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9146F3D427EC2191004FE76F /* Debug */,
+				9146F3D527EC2191004FE76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9146F3D627EC2191004FE76F /* Build configuration list for PBXNativeTarget "CaLTAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9146F3D727EC2191004FE76F /* Debug */,
+				9146F3D827EC2191004FE76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9146F39E27EC218F004FE76F /* Project object */;
+}
