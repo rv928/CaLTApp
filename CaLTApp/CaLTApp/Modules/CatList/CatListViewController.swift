@@ -97,6 +97,10 @@ class CatListViewController: UIViewController {
         let request = CatListModel.Request(limit: kPageSize, page: currentPage)
         self.interactor.fetchCatList(request: request)
     }
+    
+    func navigateToDetailView(catViewModel: CatListViewModel) {
+        self.router.navigateToCatDetailView(catViewModel: catViewModel)
+    }
 }
 
 extension CatListViewController: CatListView {
@@ -161,7 +165,13 @@ extension CatListViewController: UITableViewDataSource {
 }
 
 extension CatListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let catDetailViewModel = self.catList?[indexPath.row]
+        if let detailVMModel = catDetailViewModel {
+            self.navigateToDetailView(catViewModel: detailVMModel)
+        }
+    }
 }
 
 // MARK:- UIScrollViewDelegate

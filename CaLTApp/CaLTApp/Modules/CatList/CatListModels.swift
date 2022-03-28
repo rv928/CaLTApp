@@ -29,7 +29,7 @@ struct CatListModel {
                 case origin = "origin"
                 case image = "image"
                 case temperament = "temperament"
-                case energyLevel = "energyLevel"
+                case energyLevel = "energy_level"
             }
             
             init(from decoder: Decoder) throws {
@@ -59,9 +59,27 @@ class CatListViewModel {
     var origin: String = ""
     var image: String = ""
     var temperament: String = ""
-    var energyLevel: Int?
+    var energyLevel: Int = 0
     
-    init(id: String, name: String, origin: String ,image: String, temperament: String, energyLevel: Int?) {
+    init(id: String, name: String, origin: String ,image: String, temperament: String, energyLevel: Int) {
+        self.id = id
+        self.name = name
+        self.origin = origin
+        self.image = image
+        self.temperament = temperament
+        self.energyLevel = energyLevel
+    }
+}
+
+class CatDetailViewModel: ObservableObject {
+    @Published var id: String = ""
+    @Published var name: String = ""
+    @Published var origin: String = ""
+    @Published var image: String = ""
+    @Published var temperament: String = ""
+    @Published var energyLevel: Int = 0
+    
+    init(id: String, name: String, origin: String, image: String, temperament: String, energyLevel: Int) {
         self.id = id
         self.name = name
         self.origin = origin
