@@ -30,6 +30,11 @@
 		91799DC627EEC89E00987BB0 /* UIViewController+ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DC527EEC89E00987BB0 /* UIViewController+ProgressHUD.swift */; };
 		91799DC827EEC8D700987BB0 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DC727EEC8D700987BB0 /* UIViewController+Alert.swift */; };
 		91799DCA27EEF30300987BB0 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DC927EEF30300987BB0 /* UIImageView+DownloadImage.swift */; };
+		91799DCC27EEFCAD00987BB0 /* CatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DCB27EEFCAD00987BB0 /* CatDetailView.swift */; };
+		91799DCE27EF201700987BB0 /* CatListInteractorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DCD27EF201700987BB0 /* CatListInteractorUnitTests.swift */; };
+		91799DD027EF204E00987BB0 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DCF27EF204E00987BB0 /* Seeds.swift */; };
+		91799DD227EF210000987BB0 /* TestDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DD127EF210000987BB0 /* TestDoubles.swift */; };
+		91799DD427EF23F300987BB0 /* CatListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91799DD327EF23F300987BB0 /* CatListPresenterTests.swift */; };
 		990BE810B4C8532C71A54C89 /* Pods_CaLTAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C15F1F6B4732B01C226EBA /* Pods_CaLTAppTests.framework */; };
 		ECAA66669832F52DC6450204 /* Pods_CaLTApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1F5E699FC52335F2A79931 /* Pods_CaLTApp.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +88,11 @@
 		91799DC527EEC89E00987BB0 /* UIViewController+ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ProgressHUD.swift"; sourceTree = "<group>"; };
 		91799DC727EEC8D700987BB0 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		91799DC927EEF30300987BB0 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		91799DCB27EEFCAD00987BB0 /* CatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailView.swift; sourceTree = "<group>"; };
+		91799DCD27EF201700987BB0 /* CatListInteractorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListInteractorUnitTests.swift; sourceTree = "<group>"; };
+		91799DCF27EF204E00987BB0 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
+		91799DD127EF210000987BB0 /* TestDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDoubles.swift; sourceTree = "<group>"; };
+		91799DD327EF23F300987BB0 /* CatListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListPresenterTests.swift; sourceTree = "<group>"; };
 		976724A825AFBB8DD2483C3C /* Pods-CaLTApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTApp.release.xcconfig"; path = "Target Support Files/Pods-CaLTApp/Pods-CaLTApp.release.xcconfig"; sourceTree = "<group>"; };
 		9B1F5E699FC52335F2A79931 /* Pods_CaLTApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaLTApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB52B5B68F81BABC5BBC17D /* Pods-CaLTAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaLTAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CaLTAppTests/Pods-CaLTAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +184,10 @@
 			children = (
 				9146F3C027EC2190004FE76F /* CaLTAppTests.swift */,
 				9146F3C227EC2190004FE76F /* Info.plist */,
+				91799DCF27EF204E00987BB0 /* Seeds.swift */,
+				91799DD127EF210000987BB0 /* TestDoubles.swift */,
+				91799DCD27EF201700987BB0 /* CatListInteractorUnitTests.swift */,
+				91799DD327EF23F300987BB0 /* CatListPresenterTests.swift */,
 			);
 			path = CaLTAppTests;
 			sourceTree = "<group>";
@@ -209,6 +223,7 @@
 		9146F3DB27EC4486004FE76F /* CatDetail */ = {
 			isa = PBXGroup;
 			children = (
+				91799DCB27EEFCAD00987BB0 /* CatDetailView.swift */,
 			);
 			path = CatDetail;
 			sourceTree = "<group>";
@@ -519,6 +534,7 @@
 				9146F3EF27EC6469004FE76F /* APIManager.swift in Sources */,
 				9146F3DE27EC53B4004FE76F /* CatListViewController.swift in Sources */,
 				9146F3F427EC70AF004FE76F /* ErrorHandler.swift in Sources */,
+				91799DCC27EEFCAD00987BB0 /* CatDetailView.swift in Sources */,
 				9146F3EA27EC5413004FE76F /* CatListRouter.swift in Sources */,
 				9146F3E627EC53FB004FE76F /* CatListService.swift in Sources */,
 				9146F3E027EC53C7004FE76F /* CatListInteractor.swift in Sources */,
@@ -536,7 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91799DCE27EF201700987BB0 /* CatListInteractorUnitTests.swift in Sources */,
 				9146F3C127EC2190004FE76F /* CaLTAppTests.swift in Sources */,
+				91799DD227EF210000987BB0 /* TestDoubles.swift in Sources */,
+				91799DD027EF204E00987BB0 /* Seeds.swift in Sources */,
+				91799DD427EF23F300987BB0 /* CatListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

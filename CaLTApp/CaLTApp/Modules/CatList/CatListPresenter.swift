@@ -26,7 +26,7 @@ class CatListPresenter: CatListPresenterInterface {
         var displayedCats: [CatListViewModel] = []
         
         for cat in axCatList {
-            let displayedCat = CatListViewModel(id: cat.id ?? "", name: cat.name ?? "", origin: cat.origin ?? "", image: cat.image?.url ?? "", temperament: cat.temperament ?? "", energyLevel: cat.energyLevel ?? nil)
+            let displayedCat = CatListViewModel(id: cat.id ?? "", name: cat.name ?? "", origin: cat.origin ?? "", image: cat.image?.url ?? "", temperament: cat.temperament ?? "", energyLevel: cat.energyLevel ?? 0)
             displayedCats.append(displayedCat)
         }
         self.catListView.displayCatList(axCatList: displayedCats)
