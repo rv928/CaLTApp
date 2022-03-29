@@ -5,6 +5,10 @@
 //  Created by Vora, Ravi | Rv | RP on 2022/03/24.
 //
 
+/**
+    # API manager is built with Alamofire dependency.
+*/
+
 import Foundation
 import Alamofire
 

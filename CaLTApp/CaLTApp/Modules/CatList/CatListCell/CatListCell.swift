@@ -25,6 +25,9 @@ class CatListCell: UITableViewCell {
     func prepareCell(with viewModel: CatListViewModel) {
         self.nameLabel?.text = viewModel.name
         self.originLabel?.text = viewModel.origin
+        /**
+            Used Kingfisher dependency to load the image.
+        */
         self.catImageView?.downloadImage(from: viewModel.image)
     }
 }

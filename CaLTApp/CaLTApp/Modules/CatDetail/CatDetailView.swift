@@ -47,6 +47,8 @@ struct CatDetailView: View {
     }
 }
 
+// MARK:- RatingView
+
 struct RatingView: View {
     
     @Binding var rating: Int
@@ -73,6 +75,7 @@ struct CatDetailView_Previews: PreviewProvider {
 }
 
 
+// MARK:- AsyncImageView
 
 struct AsyncImageView: View {
     var urlString: String

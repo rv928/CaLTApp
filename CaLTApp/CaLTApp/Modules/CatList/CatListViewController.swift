@@ -103,6 +103,8 @@ class CatListViewController: UIViewController {
     }
 }
 
+// MARK:- CatListView Methods
+
 extension CatListViewController: CatListView {
     
     func displayCatList(axCatList: [CatListViewModel]) {
@@ -120,6 +122,9 @@ extension CatListViewController: CatListView {
     }
     
     func showLoading() {
+        /**
+            Used SVProgressHUD dependency to show loader.
+        */
         self.showProgressHUD()
     }
     
@@ -131,6 +136,8 @@ extension CatListViewController: CatListView {
         self.presentAlert(errorHandler: errorHandler)
     }
 }
+
+// MARK:- UITableViewDataSource
 
 extension CatListViewController: UITableViewDataSource {
     
@@ -163,6 +170,8 @@ extension CatListViewController: UITableViewDataSource {
         return UITableViewCell()
     }
 }
+
+// MARK:- UITableViewDelegate
 
 extension CatListViewController: UITableViewDelegate {
     
