@@ -11,6 +11,7 @@ import Foundation
 class Seeds {
     func loadCatListFromJson() -> [CatListModel.Response.Cat]? {
         
+        // Loading dummy data from json file
         if let path = Bundle.main.path(forResource: "CatJSONResponse", ofType: "json") {
             do {
                   let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)

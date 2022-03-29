@@ -20,6 +20,7 @@ final class CatListRouter: CatListRouterInterface {
     
     func navigateToCatDetailView(catViewModel: CatListViewModel) {
         let detailVModel = CatDetailViewModel(id: catViewModel.id, name: catViewModel.name, origin: catViewModel.origin, image: catViewModel.image, temperament: catViewModel.temperament, energyLevel: catViewModel.energyLevel)
+        // Preparing data for SwiftUi model and switching from UIKit to SwiftUI View with UIHostingController
         let swiftUIDetailController = UIHostingController(rootView: CatDetailView().environmentObject(detailVModel))
         viewController?.navigationController?.pushViewController(swiftUIDetailController, animated: true)
     }

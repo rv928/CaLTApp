@@ -71,6 +71,8 @@ class CatListViewModel {
     }
 }
 
+// Create Data struct for SwiftUI compatible
+
 class CatDetailViewModel: ObservableObject {
     @Published var id: String = ""
     @Published var name: String = ""
