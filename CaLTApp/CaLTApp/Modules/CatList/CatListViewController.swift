@@ -16,16 +16,16 @@ protocol CatListView {
 }
 
 class CatListViewController: UIViewController {
-
+    
     @IBOutlet weak private var catListTableView: UITableView?
-    var interactor: CatListBusinessLogic!
-    var router: CatListRouterInterface!
+    var interactor: CatListBusinessLogic?
+    var router: CatListRouterInterface?
     private var catList: [CatListViewModel]? = []
     private var currentPage: Int = 0
     
     // MARK: - Initializers
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil:
-        Bundle?) {
+                    Bundle?) {
         super.init(nibName: nibNameOrNil, bundle:nibBundleOrNil)
         setup()
     }
@@ -70,11 +70,11 @@ class CatListViewController: UIViewController {
         self.catListTableView?.frame = view.bounds
     }
     
-    func setupUI() {
+    private func setupUI() {
         self.catListTableView?.isHidden = true
     }
     
-    func setUpCatListTableView() {
+    private func setUpCatListTableView() {
         self.catListTableView?.separatorInset = .zero
         self.catListTableView?.layoutMargins = .zero
         self.catListTableView?.tableFooterView = UIView(frame: .zero)
@@ -85,26 +85,26 @@ class CatListViewController: UIViewController {
     /*
      * This method will setup NavigationBar
      */
-   private func setupNavigationBar() {
+    private func setupNavigationBar() {
         self.navigationItem.title = "Cats"
         self.navigationController?.navigationBar.isTranslucent = false
     }
     
     private func fetchCatList() {
         DispatchQueue.main.async {
-            self.interactor.showLoading()
+            self.interactor?.showLoading()
         }
         let request = CatListModel.Request(limit: kPageSize, page: currentPage)
-        self.interactor.fetchCatList(request: request)
+        self.interactor?.fetchCatList(request: request)
     }
     
     func navigateToDetailView(catViewModel: CatListViewModel) {
-        self.router.navigateToCatDetailView(catViewModel: catViewModel)
+        self.router?.navigateToCatDetailView(catViewModel: catViewModel)
     }
 }
 
 extension CatListViewController: CatListView {
-   
+    
     func displayCatList(axCatList: [CatListViewModel]) {
         
         for(index, _) in axCatList.enumerated() {

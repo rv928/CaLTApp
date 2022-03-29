@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 class CatListCell: UITableViewCell {
-
+    
     @IBOutlet weak private var catImageView: UIImageView?
     @IBOutlet weak private var nameLabel: UILabel?
     @IBOutlet weak private var originLabel: UILabel?
@@ -17,7 +17,7 @@ class CatListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

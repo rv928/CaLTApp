@@ -16,7 +16,7 @@ protocol CatListPresenterInterface {
 
 class CatListPresenter: CatListPresenterInterface {
     
-    var catListView: CatListView!
+    var catListView: CatListView?
     
     init(viewController: CatListView) {
         self.catListView = viewController
@@ -29,18 +29,18 @@ class CatListPresenter: CatListPresenterInterface {
             let displayedCat = CatListViewModel(id: cat.id ?? "", name: cat.name ?? "", origin: cat.origin ?? "", image: cat.image?.url ?? "", temperament: cat.temperament ?? "", energyLevel: cat.energyLevel ?? 0)
             displayedCats.append(displayedCat)
         }
-        self.catListView.displayCatList(axCatList: displayedCats)
+        self.catListView?.displayCatList(axCatList: displayedCats)
     }
     
     func showLoading() {
-        self.catListView.showLoading()
+        self.catListView?.showLoading()
     }
     
     func hideLoading() {
-        self.catListView.hideLoading()
+        self.catListView?.hideLoading()
     }
     
     func showAlertError(errorHandler: ErrorHandler) {
-        self.catListView.showAlertError(errorHandler: errorHandler)
+        self.catListView?.showAlertError(errorHandler: errorHandler)
     }
 }

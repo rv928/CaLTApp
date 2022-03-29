@@ -40,7 +40,7 @@ struct CatDetailView: View {
             
             RatingView(rating: $detailVMModel.energyLevel, max: 5)
                 .padding(.top, 5)
-           
+            
             Spacer()
         }
         .navigationBarTitle("\(detailVMModel.name)")

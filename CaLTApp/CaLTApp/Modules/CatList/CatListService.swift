@@ -17,7 +17,9 @@ final class CatListService {
         dict["limit"] = request.limit
         dict["page"] = request.page
         api.call(parameters: dict, headersAdditional: nil, encoding: nil, fail: { (dataResponse) in
-            fail(ErrorHandler(response: dataResponse!))
+            if let dataResponse = dataResponse {
+                fail(ErrorHandler(response: dataResponse))
+            }
         }) { (jsonData) in
             guard let jsonData = jsonData else { return }
             success(jsonData)

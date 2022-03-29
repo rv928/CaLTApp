@@ -15,7 +15,7 @@ protocol CatListWorkerInterface {
 
 final class CatListWorker: CatListWorkerInterface {
     
-    var service: CatListService!
+    var service: CatListService?
     
     init(with aService: CatListService) {
         service = aService
@@ -25,7 +25,7 @@ final class CatListWorker: CatListWorkerInterface {
                       success: @escaping ([CatListModel.Response.Cat]?) -> (),
                       fail: @escaping (_ errorHandler: ErrorHandler) -> ()) {
         
-        service.fetchCatlist(request: request) { jsonData in
+        service?.fetchCatlist(request: request) { jsonData in
             if let jsonData = jsonData {
                 do {
                     let decoder = JSONDecoder()
@@ -38,7 +38,7 @@ final class CatListWorker: CatListWorkerInterface {
             } else {
                 fail(ErrorHandler(message: "No data"))
             }
-           
+            
         } fail: { errorHandler in
             fail(errorHandler)
         }
