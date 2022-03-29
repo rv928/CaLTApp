@@ -35,6 +35,14 @@
 - Unit Test cases
 - UI Test cases
 
-# Features
+## Features
 - Display list of cats from the CatAPI with UIKit
 - Display detail screen with swiftUI 
+
+## Limitations 
+- No pull to refresh
+
+## Improvement
+- Can add more things in detail screen
+- Convert cat list screen to swiftUI once get confidence with detail screen
+- Can add filter in list screen to give option to seeach for specific breeds only.
