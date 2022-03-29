@@ -12,6 +12,9 @@
 ## Support
 - App and code supports for iOS 14.1 and devices only.
 
+## Pagination
+- Scroll to bottom for load more Data
+
 ## UI
 - UIkit and SwiftUI
 
@@ -24,9 +27,9 @@
 
 ## Dependencies
 - Cocoa Pods
--> Alamofire (https://github.com/Alamofire/Alamofire) (For API call)
--> KingFisher (https://github.com/onevcat/Kingfisher) (For Image loading)
--> SVProgressHUD (https://github.com/SVProgressHUD/SVProgressHUD) (To show progressHUD)
+- Alamofire (https://github.com/Alamofire/Alamofire) (For API call)
+- KingFisher (https://github.com/onevcat/Kingfisher) (For Image loading)
+- SVProgressHUD (https://github.com/SVProgressHUD/SVProgressHUD) (To show progressHUD)
 
 ## Tests
 - Unit Test cases
