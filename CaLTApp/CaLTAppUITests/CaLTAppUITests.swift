@@ -9,34 +9,51 @@ import XCTest
 
 class CaLTAppUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+    var customKeywordsUtils: CustomKeywordsUtils? = CustomKeywordsUtils.init()
+    let app = XCUIApplication()
+    
+    override func setUp() {
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app.launch()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        customKeywordsUtils?.deleteMyApp()
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testExample() {
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+    func testForCatListToDetailScreen() {
+        
+        // Find Plus button
+        let tableView = app.tables["tableView--catListTableView"]
+        XCTAssert(tableView.waitForExistence(timeout: 5))
+        
+        // Load Cat TableView
+        let catListTableView = app.tables.matching(identifier: "tableView--catListTableView")
+        let catCell = catListTableView.cells.element(matching: .cell, identifier: "CatListCell0")
+        customKeywordsUtils?.swipeToFindElement(app: app, element: catCell, count: 2)
+        
+        let catName: String = "Abyssinian"
+        
+        _ = customKeywordsUtils?.swipeToExpectedCellByText(collectionView: catListTableView.cells["CatListCell0"].firstMatch, expectedText: catName, loopCount: 1, swipeSide: .up)
+        
+        let firstCell = tableView.cells.element(boundBy: 0)
+        firstCell.tap()
+    
+        _ = app.staticTexts.matching(identifier: catName)
+        
+        app.navigationBars.buttons.element(boundBy: 0).tap()
     }
 }

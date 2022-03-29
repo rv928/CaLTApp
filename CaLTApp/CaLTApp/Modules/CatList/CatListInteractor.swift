@@ -14,29 +14,29 @@ protocol CatListBusinessLogic {
 
 final class CatListInteractor: CatListBusinessLogic {
     
-    var presenter: CatListPresenterInterface!
-    var worker: CatListWorkerInterface!
+    var presenter: CatListPresenterInterface?
+    var worker: CatListWorkerInterface?
     
     init(presenter: CatListPresenterInterface, worker:
-        CatListWorkerInterface = CatListWorker(with: CatListService())) {
+            CatListWorkerInterface = CatListWorker(with: CatListService())) {
         self.presenter = presenter
         self.worker = worker
     }
     
     func fetchCatList(request: CatListModel.Request) {
         self.showLoading()
-        worker.fetchCatList(request: request) { catList in
+        worker?.fetchCatList(request: request) { catList in
             if let catList = catList {
-                self.presenter.displayCatList(axCatList: catList)
+                self.presenter?.displayCatList(axCatList: catList)
             }
-            self.presenter.hideLoading()
+            self.presenter?.hideLoading()
         } fail: { errorHandler in
-            self.presenter.hideLoading()
-            self.presenter.showAlertError(errorHandler: errorHandler)
+            self.presenter?.hideLoading()
+            self.presenter?.showAlertError(errorHandler: errorHandler)
         }
     }
     
     func showLoading() {
-        self.presenter.showLoading()
+        self.presenter?.showLoading()
     }
 }

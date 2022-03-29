@@ -12,7 +12,7 @@ import Kingfisher
 extension UIImageView {
     
     func downloadImage(from url: String) {
-    
+        
         let url = URL(string: url)
         let processor = DownsamplingImageProcessor(size: self.bounds.size)
         self.kf.setImage(
